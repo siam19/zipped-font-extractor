@@ -1,8 +1,16 @@
 # Zipped Font Files Extractor
 
-This Python script is designed to extract `.ttf` and `.otf` font files from ZIP archives in the current directory. It organizes the extracted fonts into a dedicated folder and handles duplicate fonts by prioritizing `.ttf` files over `.otf` files. It also skips hidden or metadata files (e.g., files starting with `.`).
+This Python script is designed to extract `.ttf` and `.otf` font files from ZIP archives in the current directory. It organizes the extracted fonts into a dedicated folder.
 
----
+
+## Usage
+
+1. Place the script (`zip_font_extractor.py`) in the directory containing your ZIP files.
+2. Run the script using Python:
+
+   ```bash
+   python zip_font_extractor.py
+
 
 ## Features
 
@@ -12,19 +20,10 @@ This Python script is designed to extract `.ttf` and `.otf` font files from ZIP 
 - **Organizes Output**: Creates a `FONT FILES` directory to store all extracted fonts.
 - **Handles Errors**: Gracefully handles corrupt ZIP files and other errors.
 
----
+
 
 ## Requirements
 
 - Python 3.x
 - No additional libraries are required (uses built-in `os` and `zipfile` modules).
 
----
-
-## Usage
-
-1. Place the script (`zip_font_extractor.py`) in the directory containing your ZIP files.
-2. Run the script using Python:
-
-   ```bash
-   python zip_font_extractor.py
